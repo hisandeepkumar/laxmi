@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>लक्ष्मी, पूजा, महेश और मुकेश का विवाह | शुभ विवाह 19 अप्रैल 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-light: #fdf2f2;
+            --pink-medium: #f9d8d8;
+            --pink-dark: #f0b6b6;
+            --pink-accent: #e89595;
+            --gold: #d4af37;
+            --maroon: #8b4513;
+            --text: #5a3e3e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdf2f2 0%, #fce4e4 100%);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(214, 124, 124, 0.2);
+            position: relative;
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, var(--pink-dark) 0%, var(--pink-accent) 100%);
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card-subtitle {
+            font-family: 'Hind', sans-serif;
+            font-size: 18px;
+            color: white;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 30px;
+            position: relative;
+            background: linear-gradient(135deg, #fdf8f8 0%, #fcf0f0 100%);
+        }
+        
+        .couple-section {
+            text-align: center;
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .couple-names {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .bride-name, .groom-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--maroon);
+            font-weight: 700;
+        }
+        
+        .together {
+            font-size: 20px;
+            color: var(--gold);
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .date-section {
+            background: linear-gradient(135deg, #8b4513 0%, #a05c5c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 25px 0;
+            box-shadow: 0 10px 20px rgba(139, 69, 19, 0.4);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--gold);
+        }
+        
+        .date {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .day {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .details-section {
+            margin: 25px 0;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: var(--maroon);
+            margin-bottom: 15px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--pink-accent);
+            border-radius: 3px;
+        }
+        
+        .event-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed rgba(139, 69, 19, 0.2);
+        }
+        
+        .event-name {
+            font-weight: 500;
+            color: var(--text);
+        }
+        
+        .event-time {
+            color: var(--maroon);
+            font-weight: 500;
+        }
+        
+        .venue {
+            background: var(--pink-light);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: center;
+            border: 2px dashed var(--pink-accent);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .venue:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(212, 122, 122, 0.3);
+            background: #fce8e8;
+            border: 2px solid var(--pink-accent);
+        }
+        
+        .venue::before {
+            content: '🏵️';
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            font-size: 24px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .click-indicator {
+            position: centre;
+            bottom: 8px;
+            font-size: 12px;
+            color: var(--pink-accent);
+            padding: 3px 8px;
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+            font-weight: 600;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .venue-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--maroon);
+            margin-bottom: 10px;
+        }
+        
+        .venue-address {
+            color: var(--text);
+            margin-bottom: 5px;
+        }
+        
+        .invitee-section {
+            background: var(--pink-light);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: center;
+            border: 2px dashed var(--pink-accent);
+        }
+        
+        .invitee-line {
+            margin: 10px 0;
+            font-weight: 500;
+            color: var(--maroon);
+        }
+        
+        .family-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .family-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(212, 122, 122, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid var(--pink-medium);
+        }
+        
+        .family-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .family-role {
+            font-size: 14px;
+            color: var(--pink-accent);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .family-name {
+            font-size: 16px;
+            color: var(--maroon);
+            font-weight: 600;
+        }
+        
+        .invitation-text {
+            text-align: center;
+            margin: 25px 0;
+            font-style: italic;
+            color: var(--maroon);
+            font-size: 18px;
+            line-height: 1.6;
+            background: var(--pink-light);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid var(--pink-accent);
+        }
+        
+        .mantra-section {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: var(--pink-light);
+            border-radius: 15px;
+            border: 1px solid var(--pink-medium);
+        }
+        
+        .mantra {
+            font-size: 18px;
+            color: var(--maroon);
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, var(--maroon) 0%, #a05c5c 100%);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .footer-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            margin-top: 15px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .heart-icon {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: rgba(255,255,255,0.7);
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        .music-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--pink-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .music-toggle:hover {
+            transform: scale(1.1);
+            background: var(--maroon);
+        }
+        
+        .music-toggle svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+        
+        .background-flowers {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .foreground-flowers {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 20;
+        }
+        
+        .flower {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0.8;
+            z-index: inherit;
+        }
+        
+        .petal {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23e89595" d="M10,2 C12,6 16,8 18,8 C16,12 12,14 10,18 C8,14 4,12 2,8 C4,8 8,6 10,2 Z" /></svg>');
+            background-size: cover;
+            opacity: 0.7;
+            z-index: inherit;
+        }
+        
+        .large-petal {
+            width: 25px;
+            height: 25px;
+        }
+        
+        .small-petal {
+            width: 10px;
+            height: 10px;
+        }
+        
+        .glass-signature {
+            margin-top: 12px;
+            font-size: 14px;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px 16px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.25) 0%, 
+                rgba(255, 255, 255, 0.1) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 
+                0 8px 16px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+            color: white;
+            font-weight: 500;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: glassFloat 4s ease-in-out infinite;
+            overflow: hidden;
+        }
+        
+        .glass-signature::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.4), 
+                transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .glass-signature:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 
+                0 12px 24px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.35) 0%, 
+                rgba(255, 255, 255, 0.15) 100%);
+        }
+        
+        .glass-signature:hover::before {
+            left: 100%;
+        }
+        
+        .glass-signature:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        .heart-beat {
+            color: #ff6b6b;
+            display: inline-block;
+            margin: 0 4px;
+            animation: heartPulse 1.5s ease-in-out infinite;
+            text-shadow: 0 0 8px rgba(255, 107, 107, 0.6);
+        }
+        
+        @keyframes glassFloat {
+            0%, 100% { 
+                transform: translateY(0); 
+                box-shadow: 
+                    0 8px 16px rgba(0, 0, 0, 0.2),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+                    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+            }
+            50% { 
+                transform: translateY(-4px); 
+                box-shadow: 
+                    0 12px 20px rgba(0, 0, 0, 0.25),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+                    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+            }
+        }
+        
+        @keyframes heartPulse {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1.1); }
+            75% { transform: scale(1.3); }
+        }
+        
+        .event-date {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            color: var(--maroon);
+            margin: 20px 0 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--pink-medium);
+            text-align: center;
+        }
+        
+        @media (max-width: 500px) {
+            .card-title {
+                font-size: 28px;
+            }
+            .bride-name, .groom-name {
+                font-size: 22px;
+            }
+            .date {
+                font-size: 22px;
+            }
+            .family-section {
+                grid-template-columns: 1fr;
+            }
+            .content {
+                padding: 20px;
+            }
+            .glass-signature {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="music-toggle" id="musicToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+    </div>
+    
+    <audio id="bgMusic" loop>
+        <source src="https://github.com/hisandeepkumar/ff/raw/main/Audio_414108.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="background-flowers" id="backgroundFlowers"></div>
+    <div class="foreground-flowers" id="foregroundFlowers"></div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">।। श्री गणेशाय नम: ।।</h1>
+                <p class="card-subtitle"></p>
+                <div class="heart-icon"></div>
+            </div>
+            
+            <div class="content">
+                <!-- Wedding Date Block -->
+                <div class="date-section">
+                    <div class="date">शुभ विवाह</div>
+                    <div class="day">रविवार, 19 अप्रैल 2026</div>
+                </div>
+                
+                <!-- Couple Section -->
+                <div class="couple-section">
+                    <div class="couple-names">
+                        <div class="bride-name">आयु. लक्ष्मी, पूजा</div>
+                        <div class="together">संग</div>
+                        <div class="groom-name">चि. महेश, मुकेश (दिल्ली पुलिस)</div>
+                    </div>
+                    <p style="color: var(--maroon); font-weight: 600; margin-top: 10px;">टांटला परिवार आपका हार्दिक स्वागत करता है!</p>
+                </div>
+                
+                <!-- Invitee Name Line -->
+                <div class="invitee-section">
+                    <div class="invitee-line">श्रीमान् ____________________</div>
+                    <div style="border-bottom: 1px dashed var(--pink-accent); width: 80%; margin: 15px auto;"></div>
+                    <div style="font-size: 14px; margin-top: 5px;">सादर आमंत्रित किया जाता है</div>
+                </div>
+                
+                <!-- Sender Details -->
+                <div class="details-section">
+                    <h2 class="section-title">प्रेषक</h2>
+                    <div style="text-align: center; line-height: 1.7;">
+                        पूरणमल, खेताराम हलवाई, रतनलाल यादव<br>
+                        निवासी - ढाणी रामनगर, चतुर्भुज<br>
+                        जिला - कोटपूतली-बहरोड़ (राज.)<br>
+                        मो.: 9799817324, 9950785111, 8104322542, 6377570877
+                    </div>
+                </div>
+                
+                <!-- Vedic Mantra -->
+                <div class="mantra-section">
+                    <div class="mantra">।। ॐ श्री गणेशाय नम: ।।</div>
+                    <div class="mantra">मंगलम् भगवान विष्णु, मंगलम् गरुड़ध्वज: ।<br>मंगलम् पुण्डरीकाक्ष:, मंगलाय तनोहरि: ।।</div>
+                </div>
+                
+                <!-- Event Schedule -->
+                <div class="details-section">
+                    <h2 class="section-title">मांगलिक कार्यक्रम</h2>
+                    
+                    <div class="event-date">दिनांक 17 अप्रैल 2026, शुक्रवार</div>
+                    <div class="event-item">
+                        <div class="event-name">हल्दी / महिला संगीत</div>
+                        <div class="event-time">प्रात: 10:15 बजे</div>
+                    </div>
+                    
+                    <div class="event-date">दिनांक 18 अप्रैल 2026, शनिवार</div>
+                    <div class="event-item">
+                        <div class="event-name">चाक</div>
+                        <div class="event-time">सायं 4:15 बजे</div>
+                    </div>
+                    
+                    <div class="event-date">दिनांक 19 अप्रैल 2026, रविवार</div>
+                    <div class="event-item">
+                        <div class="event-name">भात</div>
+                        <div class="event-time">दोपहर 1:15 बजे</div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-name">बारात स्वागत</div>
+                        <div class="event-time">सायं 6:15 बजे</div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-name">पाणिग्रहण संस्कार</div>
+                        <div class="event-time">रात्रि शुभलग्नानुसार</div>
+                    </div>
+                    
+                    <div class="event-date">दिनांक 20 अप्रैल 2026, सोमवार</div>
+                    <div class="event-item">
+                        <div class="event-name">विदाई</div>
+                        <div class="event-time">प्रात:काल</div>
+                    </div>
+                </div>
+                
+                <!-- Venue with Map Link -->
+                <div class="venue" onclick="window.open('https://maps.app.goo.gl/KwmjJ6dM7to1yy2CA', '_blank')">
+                    <div class="venue-name">ढाणी रामनगर, चतुर्भुज</div>
+                    <div class="venue-address">जिला - कोटपूतली-बहरोड़, राजस्थान</div>
+                    <div class="click-indicator">📍 स्थान के लिए क्लिक करें | Click for location</div>
+                </div>
+                
+                <!-- Vishesh Aagrah -->
+                <div class="details-section">
+                    <h2 class="section-title">विशेष आग्रह</h2>
+                    <div style="text-align: center; line-height: 1.8;">
+                        नरेश जी, धर्मवीर जी, अक्षय, ओमवीर (आर्मी), अनिल, अभयसिंह,<br>
+                        जयप्रकाश, रजनीश, अमित, संदीप
+                    </div>
+                </div>
+                
+                <!-- Swagatkarta -->
+                <div class="details-section">
+                    <h2 class="section-title">स्वागतकर्ता</h2>
+                    <div style="text-align: center; line-height: 1.8; font-size: 15px;">
+                        प्रतापसिंह यादव सरपंच, राजूराम, गोपाल ड्राईवर, लक्ष्मण (SI BSF), सुवालाल, लालचन्द हलवाई,<br>
+                        धर्मपाल ट्रांसपोर्टर, रामवीर कम्पाउण्डर, अमरसिंह, अशोक एडवोकेट, राधेश्याम डीलर, करण सिंह (CHO),<br>
+                        मोनू, नरेश, यादराम ड्राईवर, सुरेन्द्र कम्पाउण्डर, ब्रजमोहन, रामवीर (CISF), अजय, सोनू (AIR FORCE), अनिल, सुनिल
+                    </div>
+                </div>
+                
+                <!-- Nanihal Paksh -->
+                <div class="details-section">
+                    <h2 class="section-title">ननिहाल पक्ष</h2>
+                    <div style="text-align: center; line-height: 1.7;">
+                        <strong>नानाजी - नानीजी :</strong> स्व. श्री श्यामलाल पंच जी - श्रीमती मिश्रो देवी<br>
+                        <strong>मामाजी - मामीजी :</strong> स्व. श्री रामौतार जी - श्रीमती गुलाब देवी, श्री धंशीराम जी - श्रीमती कमलेश देवी, श्री गाड़ाराम जी - श्रीमती राजबाला देवी<br>
+                        <strong>चाचाजी - चाचीजी :</strong> रमेशचन्द - मुकेश देवी, वैध मोतीराम - ललिता देवी, सुरेश कुमार - मुकेश देवी<br>
+                        <strong>बुआ जी - फुफाजी :</strong> जानकी देवी - सुरेश जी, लीला देवी - रमेश जी
+                    </div>
+                </div>
+                
+                <!-- Bal Aagrah (Children request) -->
+                <div class="invitation-text">
+                    🌸 बाल-आग्रह 🌸<br>
+                    प्रिंस, युवराज, जिवेश, जय, कार्तिक, विवान, देव, तंमय, तनिष्क्, दक्ष, देवराज, युवान, गुड्डा,<br>
+                    अंकिता, वर्षा, मितांशी, नंदनी, अंश, पवन, चिंटू
+                </div>
+                
+                <!-- Pratishthan (Establishments) -->
+                <div class="details-section">
+                    <h2 class="section-title">प्रतिष्ठान</h2>
+                    <div style="text-align: center; line-height: 1.7;">
+                        श्री गणपति एजेंसी भिवाड़ी, नंदिनी ट्रेडिंग कम्पनी चतुर्भुज,<br>
+                        यादव मिष्ठान भण्डार, यादव ट्रांसपोर्ट कम्पनी जयपुर,<br>
+                        अमुल डेयरी कांकरिया मो. 9785107328
+                    </div>
+                </div>
+                
+                
+                <!-- Final Blessing & Family Line -->
+                <div class="mantra-section">
+                    <div class="mantra">|| श्री गणेशाय नमः ||</div>
+                    <div class="mantra">परमपिता परमेश्वर की असीम अनुकम्पा से</div>
+                    <div class="mantra" style="margin-top: 10px;">टांटला परिवार एवं समस्त कुटुम्ब</div>
+                </div>
+            </div>
+
+               <!-- माता-पिता व परिवार -->
+            <div class="invitation-text">
+                <div>परम पिता परमात्मा की असीम अनुकम्पा से</div>
+                <div><strong>श्रीमती कल्ली देवी एवं स्व. श्री नानगराम यादव</strong> (दादा-दादी)</div>
+                <div>अपनी सुपौत्री <strong>आयु. लक्ष्मी, पूजा</strong> (सुपुत्री - श्रीमती कबुल देवी एवं श्री रतनलाल यादव, निवासी ढाणी रामनगर)</div>
+                <div>संग <strong>चि. महेश, मुकेश (दिल्ली पुलिस)</strong> (सुपुत्र - श्रीमती मेखली देवी एवं श्री फुलचन्द जी, निवासी खटकड़, किशोरपुरा)</div>
+                <div style="margin:12px 0; font-size:20px; font-weight:bold;">के मांगलिक परिणयोत्सव की मधुर बेला पर आपको सपरिवार सादर आमंत्रित करते हैं।</div>
+            </div>
+
+            <!-- दर्शनाभिलाषी -->
+            <h2 class="section-title">दर्शनाभिलाषी</h2>
+            <div style="background:#fff5ef; border-radius:28px; padding:12px 18px; text-align:center; line-height:1.7;">
+                रामस्वरूप, ओमप्रकाश, रामकरण पंच, रोहिताश (ताऊ), झाबरमल, बहादुरमल, सरोज, सावतसिंह, गुरूदयाल कम्पाउण्डर,<br>
+                राजेन्द्र डीलर, विक्रमसिंह स्टाम्प-वेन्डर, देशराज, देवेन्द्र, सौरभ, हिमांशु, जयप्रकाश, रविराज, विशेष,<br>
+                ओमेन्द्र, रोहित, अजय, योगेश, संदीप, केशव, निखिल एवं समस्त यादव परिवार व मित्रगण।
+            </div>
+
+            <!-- उत्तराकांक्षी -->
+           <div class="details-section">
+                    <h2 class="section-title">उत्तराकांक्षी</h2>
+                    <div style="text-align: center; line-height: 1.7;">
+                       हजारीलाल, जसंवत,<br>
+                        राकेश (राज. पुलिस)<br>
+                        निवासी - ढाणी रामनगर, चतुर्भुज<br>
+                        जिला - कोटपूतली-बहरोड़ (राज.)<br>
+                        मो.: 9784304141, 9680673114
+                    </div>
+                </div>
+
+           <!--   <div class="details-section">
+                    <h2 class="section-title">उत्तराकांक्षी</h2>
+                    <div style="text-align: center; line-height: 1.7;">
+                       हजारीलाल, जसंवत,<br>
+                        राकेश (राज. पुलिस)<br>
+                        निवासी - ढाणी रामनगर, चतुर्भुज<br>
+                        जिला - कोटपूतली-बहरोड़ (राज.)<br>
+                        मो.: 9799817324, 9950785111, 8104322542, 6377570877
+                    </div>
+                </div>
+
+            <!-- नोट: महिला निमंत्रण -->
+            <div class="invitation-text" style="background:#ffefe5;">
+                📢 नोट : महिलाओं का निमंत्रण भी इसी कार्ड द्वारा स्वीकार करें।
+            </div>
+
+            
+            <div class="footer">
+                <div class="footer-text">🌹 हार्दिक आमंत्रण, सादर उपस्थिति दें 🌹</div>
+                <div style="margin: 10px 0; font-style: italic;">— टांटला परिवार, ढाणी रामनगर</div>
+                <div class="contact">
+                    📍 ढाणी रामनगर, चतुर्भुज, जिला - कोटपूतली-बहरोड़ (राज.)<br>
+                    📞 9799817324, 9950785111, 8104322542, 6377570877
+                </div>
+                <div class="glass-signature" onclick="window.open('https://www.instagram.com/sandeep_yadav_._._', '_blank')">
+                    Made with <span class="heart-beat">❤️</span> by Sandeep
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const musicToggle = document.getElementById('musicToggle');
+        const bgMusic = document.getElementById('bgMusic');
+        let isPlaying = false;
+        let musicStarted = false;
+        
+        function startMusic() {
+            if (!musicStarted) {
+                bgMusic.play().then(() => {
+                    musicToggle.style.background = 'var(--pink-dark)';
+                    isPlaying = true;
+                    musicStarted = true;
+                }).catch(() => {
+                    musicToggle.style.background = 'var(--maroon)';
+                });
+            }
+        }
+        
+        musicToggle.addEventListener('click', () => {
+            if (!musicStarted) {
+                startMusic();
+                return;
+            }
+            if (isPlaying) {
+                bgMusic.pause();
+                musicToggle.style.background = 'var(--maroon)';
+            } else {
+                bgMusic.play();
+                musicToggle.style.background = 'var(--pink-dark)';
+            }
+            isPlaying = !isPlaying;
+        });
+        
+        function addUserInteractionListeners() {
+            const startMusicOnInteraction = () => {
+                startMusic();
+                window.removeEventListener('scroll', startMusicOnInteraction);
+                window.removeEventListener('touchstart', startMusicOnInteraction);
+                document.removeEventListener('click', startMusicOnInteraction);
+            };
+            window.addEventListener('scroll', startMusicOnInteraction, { once: true });
+            window.addEventListener('touchstart', startMusicOnInteraction, { once: true });
+            document.addEventListener('click', startMusicOnInteraction, { once: true });
+        }
+        
+        const backgroundFlowers = document.getElementById('backgroundFlowers');
+        const foregroundFlowers = document.getElementById('foregroundFlowers');
+        const flowerTypes = ['🌸', '🌺', '🌼', '🌷', '💮', '🏵️', '🌹', '🥀'];
+        const petalColors = ['#e89595', '#f0b6b6', '#f9d8d8', '#e6a4a4', '#d47a7a'];
+        
+        function createFlower(container, isForeground = false) {
+            const flower = document.createElement('div');
+            flower.className = 'flower';
+            const startX = Math.random() * 100;
+            const size = isForeground ? (20 + Math.random() * 20) : (15 + Math.random() * 15);
+            const flowerType = flowerTypes[Math.floor(Math.random() * flowerTypes.length)];
+            flower.style.left = startX + '%';
+            flower.style.fontSize = size + 'px';
+            flower.style.opacity = isForeground ? 0.9 : 0.6;
+            flower.textContent = flowerType;
+            container.appendChild(flower);
+            const duration = 4000 + Math.random() * 6000;
+            const endX = startX + (-30 + Math.random() * 60);
+            flower.animate([
+                { transform: 'translateY(-100px) rotate(0deg)', opacity: flower.style.opacity },
+                { transform: `translateY(100vh) translateX(${endX}px) rotate(${180 + Math.random() * 180}deg)`, opacity: 0 }
+            ], { duration: duration, easing: 'cubic-bezier(0.4, 0, 0.2, 1)' }).onfinish = () => flower.remove();
+        }
+        
+        function createPetal(container, isForeground = false) {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+            const startX = Math.random() * 100;
+            const sizeType = Math.random();
+            if (sizeType < 0.3) petal.classList.add('large-petal');
+            else if (sizeType < 0.6) petal.classList.add('small-petal');
+            const color = petalColors[Math.floor(Math.random() * petalColors.length)];
+            petal.style.background = `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="${color}" d="M10,2 C12,6 16,8 18,8 C16,12 12,14 10,18 C8,14 4,12 2,8 C4,8 8,6 10,2 Z" /></svg>')`;
+            petal.style.left = startX + '%';
+            petal.style.opacity = isForeground ? 0.8 : 0.5;
+            container.appendChild(petal);
+            const duration = 3000 + Math.random() * 5000;
+            const endX = startX + (-40 + Math.random() * 80);
+            petal.animate([
+                { transform: 'translateY(-50px) rotate(0deg)', opacity: petal.style.opacity },
+                { transform: `translateY(100vh) translateX(${endX}px) rotate(${180 + Math.random() * 180}deg)`, opacity: 0 }
+            ], { duration: duration, easing: 'cubic-bezier(0.4, 0, 0.2, 1)' }).onfinish = () => petal.remove();
+        }
+        
+        window.addEventListener('load', () => {
+            addUserInteractionListeners();
+            setInterval(() => { createFlower(backgroundFlowers, false); }, 350);
+            setInterval(() => { createPetal(backgroundFlowers, false); }, 220);
+            setInterval(() => { createFlower(foregroundFlowers, true); }, 450);
+            setInterval(() => { createPetal(foregroundFlowers, true); }, 180);
+        });
+    </script>
+</body>
+</html>
