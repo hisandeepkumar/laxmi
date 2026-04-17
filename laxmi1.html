@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>लक्ष्मी-पूजा व महेश-मुकेश का विवाह | यादव परिवार</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Poppins:wght@300;400;500;600&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(145deg, #fff5f0 0%, #ffe6e0 100%);
+            color: #4a2e2e;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 550px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .card {
+            background: white;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 25px 45px rgba(160, 70, 50, 0.25);
+            position: relative;
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #c47a5c 0%, #b35e3c 100%);
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid #f3cf9a;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #fff9e8;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            line-height: 1.3;
+        }
+
+        .card-subtitle {
+            font-family: 'Hind', sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: #fff2d7;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            padding: 28px 24px;
+            background: #fffef7;
+        }
+
+        .couple-section {
+            text-align: center;
+            margin: 20px 0 20px;
+        }
+
+        .couple-names {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .bride-name, .groom-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #9b4b2e;
+            font-weight: 800;
+            background: #fff0e6;
+            padding: 6px 16px;
+            border-radius: 60px;
+            display: inline-block;
+        }
+
+        .together {
+            font-size: 24px;
+            color: #d4af37;
+            font-weight: bold;
+            font-family: 'Hind', sans-serif;
+        }
+
+        .date-section {
+            background: linear-gradient(115deg, #9b4b2e 0%, #bd7a5a 100%);
+            color: white;
+            padding: 22px 12px;
+            border-radius: 28px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 12px 20px rgba(120, 50, 20, 0.3);
+            border: 1px solid #f3cf9a;
+        }
+
+        .date {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .day {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 6px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #9b4b2e;
+            margin: 28px 0 16px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 3px;
+            background: #e2a179;
+            border-radius: 3px;
+        }
+
+        .event-item {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 12px 0;
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(155, 75, 46, 0.2);
+            font-size: 15px;
+        }
+        .event-name { font-weight: 600; color: #4a2e2e; }
+        .event-time { color: #b35e3c; font-weight: 500; }
+
+        .venue {
+            background: #fff3ed;
+            padding: 20px;
+            border-radius: 28px;
+            margin: 25px 0;
+            text-align: center;
+            border: 2px solid #f3cf9a;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .venue:hover {
+            transform: scale(1.01);
+            background: #ffede4;
+            border-color: #e2a179;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .venue-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #9b4b2e;
+            font-weight: 800;
+        }
+        .click-indicator {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #b35e3c;
+            font-weight: 600;
+            animation: softPulse 1.8s infinite;
+        }
+        @keyframes softPulse { 0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; } }
+
+        .invitee-section, .invitation-text {
+            background: #fff8f2;
+            padding: 18px;
+            border-radius: 24px;
+            margin: 20px 0;
+            text-align: center;
+            border: 1px dashed #e2a179;
+        }
+        .invitee-line {
+            font-size: 18px;
+            font-weight: 500;
+            color: #9b4b2e;
+            margin: 5px;
+        }
+        .family-card {
+            background: white;
+            padding: 14px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+            border: 1px solid #ffe0d0;
+            transition: 0.2s;
+        }
+        .family-card:hover { transform: translateY(-3px); background: #fffaf5; }
+        .family-role { font-weight: 600; color: #d48c6b; margin-bottom: 6px; }
+        .family-name { color: #6b3a22; font-size: 14px; line-height: 1.4; }
+
+        .two-col-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        @media (max-width: 550px) { .two-col-grid { grid-template-columns: 1fr; } }
+
+        .glass-signature {
+            margin-top: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 245, 235, 0.8);
+            backdrop-filter: blur(8px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+        }
+        .glass-signature:hover { background: #ffefe5; transform: scale(1.02); }
+        .heart-beat { color: #e05a5a; display: inline-block; animation: heartBeat 1.2s infinite; }
+        @keyframes heartBeat { 0%,100%{ transform: scale(1); } 50%{ transform: scale(1.2); } }
+
+        .footer {
+            background: #6f3e26;
+            color: #fff0e0;
+            padding: 24px 20px;
+            text-align: center;
+        }
+        .contact { font-size: 13px; margin-top: 12px; opacity: 0.9; }
+
+        /* flower animations */
+        .background-flowers, .foreground-flowers {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .foreground-flowers { z-index: 20; }
+        .flower {
+            position: absolute;
+            font-size: 22px;
+            opacity: 0.7;
+            animation: floatFlower linear infinite;
+        }
+        @keyframes floatFlower {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 0.8; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+        .music-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 52px;
+            height: 52px;
+            background: #b35e3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 200;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.2s;
+        }
+        .music-toggle svg { fill: white; width: 26px; }
+    </style>
+</head>
+<body>
+
+<div class="music-toggle" id="musicToggle">
+    <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+</div>
+<audio id="bgMusic" loop preload="auto">
+    <source src="https://github.com/hisandeepkumar/ff/raw/main/Audio_414108.mp3" type="audio/mpeg">
+</audio>
+
+<div class="background-flowers" id="backgroundFlowers"></div>
+<div class="foreground-flowers" id="foregroundFlowers"></div>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">|| ॐ श्री गणेशाय नमः ||</h1>
+            <p class="card-subtitle">शुभ विवाह</p>
+            <div style="font-size: 20px; color:#fff0c0; margin-top: 6px;">🌺 19 अप्रैल 2026, रविवार 🌺</div>
+        </div>
+
+        <div class="content">
+            <!-- Couple names -->
+            <div class="couple-section">
+                <div class="couple-names">
+                    <span class="bride-name">लक्ष्मी, पूजा</span>
+                    <span class="together">संग</span>
+                    <span class="groom-name">महेश, मुकेश (दिल्ली पुलिस)</span>
+                </div>
+                <p style="color:#b35e3c; font-weight:600;">🍃 टांटला परिवार आपका हार्दिक स्वागत करता है 🍃</p>
+            </div>
+
+            <!-- Invitee placeholder -->
+            <div class="invitee-section">
+                <div class="invitee-line">श्रीमान् ____________________</div>
+                <div style="border-bottom:1px dashed #e2a179; width:70%; margin:12px auto;"></div>
+                <div style="border-bottom:1px dashed #e2a179; width:70%; margin:12px auto;"></div>
+            </div>
+
+            <!-- प्रेषक -->
+            <div>
+                <h2 class="section-title">प्रेषक</h2>
+                <div style="text-align:center; line-height:1.7; background:#fff7f0; border-radius:28px; padding:15px;">
+                    पूरणमल, खेताराम हलवाई, रतनलाल यादव<br>
+                    निवासी - ढाणी रामनगर, चतुर्भुज, जिला - कोटपूतली-बहरोड़ (राज.)<br>
+                    📞 9799817324, 9950785111, 8104322542, 6377570877
+                </div>
+            </div>
+
+            <!-- मंत्र -->
+            <div class="invitation-text">
+                <div style="font-size:18px;">।। ॐ श्री गणेशाय नम: ।।</div>
+                <div>मंगलम् भगवान विष्णु, मंगलम् गरुड़ध्वज: ।<br>
+                मंगलम् पुण्डरीकाक्ष:, मंगलाय तनोऽहरि: ।।</div>
+            </div>
+
+            <!-- मांगलिक कार्यक्रम -->
+            <h2 class="section-title">मांगलिक कार्यक्रम</h2>
+            <div class="event-item"><span class="event-name">हल्दी / महिला संगीत</span><span class="event-time">दिनांक 17 अप्रैल 2026, शुक्रवार प्रात: 10:15 बजे</span></div>
+            <div class="event-item"><span class="event-name">चाक</span><span class="event-time">दिनांक 18 अप्रैल 2026, शनिवार सायं 4:15 बजे</span></div>
+            <div class="event-item"><span class="event-name">भात</span><span class="event-time">दिनांक 19 अप्रैल 2026, रविवार दोप 1:15 बजे</span></div>
+            <div class="event-item"><span class="event-name">बारात स्वागत</span><span class="event-time">सायं 6:15 बजे</span></div>
+            <div class="event-item"><span class="event-name">पाणिग्रहण संस्कार</span><span class="event-time">रात्रि शुभलग्नानुसार</span></div>
+            <div class="event-item"><span class="event-name">विदाई</span><span class="event-time">दिनांक 20 अप्रैल 2026, सोमवार प्रात:काल</span></div>
+
+            <!-- Venue + Map -->
+            <div class="venue" onclick="window.open('https://maps.app.goo.gl/KwmjJ6dM7to1yy2CA', '_blank')">
+                <div class="venue-name">🏡 ढाणी रामनगर, चतुर्भुज</div>
+                <div class="venue-address">जिला - कोटपूतली-बहरोड़ (राजस्थान)</div>
+                <div class="click-indicator">📍 नक्शे के लिए यहाँ क्लिक करें 📍</div>
+            </div>
+
+            <!-- विशेष आग्रह -->
+            <div class="invitation-text">
+                <h3 style="color:#9b4b2e;">✨ विशेष आग्रह ✨</h3>
+                <p>नरेश जी, धर्मवीर जी, अक्षय, ओमवीर (आर्मी), अनिल, अभयसिंह, जयप्रकाश, रजनीश, अमित, संदीप</p>
+            </div>
+
+            <!-- स्वागतकर्ता -->
+            <h2 class="section-title">स्वागतकर्ता</h2>
+            <div style="background:#fff5ef; border-radius:28px; padding:12px 18px; text-align:center; line-height:1.7; font-size:14px;">
+                प्रतापसिंह यादव सरपंच, राजूराम, गोपाल ड्राईवर, लक्ष्मण (SI BSF), सुवालाल, लालचन्द हलवाई,<br>
+                धर्मपाल ट्रांसपोर्टर, रामवीर कम्पाउण्डर, अमरसिंह, अशोक एडवोकेट, राधेश्याम डीलर, करण सिंह (CHO),<br>
+                मोनू, नरेश, यादराम ड्राईवर, सुरेन्द्र कम्पाउण्डर, ब्रजमोहन, रामवीर (CISF), अजय, सोनू (AIR FORCE), अनिल, सुनिल
+            </div>
+
+            <!-- ननिहाल पक्ष -->
+            <h2 class="section-title">ननिहाल पक्ष</h2>
+            <div class="two-col-grid">
+                <div class="family-card"><div class="family-role">नाना-नानी</div><div>स्व. श्री श्यामलाल पंच जी - श्रीमती मिश्रो देवी</div></div>
+                <div class="family-card"><div class="family-role">मामा-मामी</div><div>स्व. श्री रामौतार जी - श्रीमती गुलाब देवी<br>श्री धंशीराम जी - श्रीमती कमलेश देवी<br>श्री गाड़ाराम जी - श्रीमती राजबाला देवी</div></div>
+            </div>
+
+            <!-- चाचा-चाची / बुआ-फूफा -->
+            <h2 class="section-title">चाचा-चाची एवं बुआ-फूफा</h2>
+            <div class="two-col-grid">
+                <div class="family-card"><div class="family-role">चाचा-चाची</div>रमेशचन्द - मुकेश देवी<br>वैध मोतीराम - ललिता देवी<br>सुरेश कुमार - मुकेश देवी</div>
+                <div class="family-card"><div class="family-role">बुआ-फूफा</div>जानकी देवी - सुरेश जी<br>लीला देवी - रमेश जी</div>
+            </div>
+
+            <!-- बाल आग्रह -->
+            <div class="invitation-text">
+                <h3 style="color:#9b4b2e;">🍭 बाल आग्रह 🍭</h3>
+                <div>प्रिंस, युवराज, जिवेश, जय, कार्तिक, विवान, देव, तंमय, तनिष्क्, दक्ष, देवराज, युवान, गुड्डा,<br>
+                अंकिता, वर्षा, मितांशी, नंदनी, अंश, पवन, चिंटू</div>
+            </div>
+
+            <!-- प्रतिष्ठान -->
+            <h2 class="section-title">प्रतिष्ठान</h2>
+            <div style="text-align:center; background:#fff5ef; border-radius:28px; padding:12px;">
+                श्री गणपति एजेंसी भिवाड़ी, नंदिनी ट्रेडिंग कम्पनी चतुर्भुज, यादव मिष्ठान भण्डार,<br>
+                यादव ट्रांसपोर्ट कम्पनी जयपुर, अमुल डेयरी कांकरिया मो. 9785107328
+            </div>
+
+            <!-- माता-पिता व परिवार -->
+            <div class="invitation-text">
+                <div>परम पिता परमात्मा की असीम अनुकम्पा से</div>
+                <div><strong>श्रीमती कल्ली देवी एवं स्व. श्री नानगराम यादव</strong> (दादा-दादी)</div>
+                <div>अपनी सुपौत्री <strong>आयु. लक्ष्मी, पूजा</strong> (सुपुत्री - श्रीमती कबुल देवी एवं श्री रतनलाल यादव, निवासी ढाणी रामनगर)</div>
+                <div>संग <strong>चि. महेश, मुकेश (दिल्ली पुलिस)</strong> (सुपुत्र - श्रीमती मेखली देवी एवं श्री फुलचन्द जी, निवासी खटकड़, किशोरपुरा)</div>
+                <div style="margin:12px 0; font-size:20px; font-weight:bold;">के मांगलिक परिणयोत्सव की मधुर बेला पर आपको सपरिवार सादर आमंत्रित करते हैं।</div>
+            </div>
+
+            <!-- दर्शनाभिलाषी -->
+            <h2 class="section-title">दर्शनाभिलाषी</h2>
+            <div style="background:#fff5ef; border-radius:28px; padding:12px 18px; text-align:center; line-height:1.7;">
+                रामस्वरूप, ओमप्रकाश, रामकरण पंच, रोहिताश (ताऊ), झाबरमल, बहादुरमल, सरोज, सावतसिंह, गुरूदयाल कम्पाउण्डर,<br>
+                राजेन्द्र डीलर, विक्रमसिंह स्टाम्प-वेन्डर, देशराज, देवेन्द्र, सौरभ, हिमांशु, जयप्रकाश, रविराज, विशेष,<br>
+                ओमेन्द्र, रोहित, अजय, योगेश, संदीप, केशव, निखिल एवं समस्त यादव परिवार व मित्रगण।
+            </div>
+
+            <!-- उत्तराकांक्षी -->
+            <h2 class="section-title">उत्तराकांक्षी</h2>
+            <div class="two-col-grid">
+                <div class="family-card"><div class="family-role">हजारीलाल, जसंवत</div><div>राकेश (राज. पुलिस)<br>निवासी - ढाणी रामनगर, चतुर्भुज</div></div>
+                <div class="family-card"><div class="family-role">संपर्क</div>📞 9784304141, 9680673114</div>
+            </div>
+
+            <!-- नोट: महिला निमंत्रण -->
+            <div class="invitation-text" style="background:#ffefe5;">
+                📢 नोट : महिलाओं का निमंत्रण भी इसी कार्ड द्वारा स्वीकार करें।
+            </div>
+
+            <!-- अंतिम मंगलाचरण -->
+            <div class="invitation-text">
+                <div>।। ॐ श्री गणेशाय नम: ।।</div>
+                <div>मंगलम् भगवान विष्णु, मंगलम् गरुड़ध्वज: ।</div>
+                <div>मंगलम् पुण्डरीकाक्ष:, मंगलाय तनोऽहरि: ।।</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">💐 हार्दिक शुभकामनाएँ एवं सादर आमंत्रण 💐</div>
+            <div>— टांटला यादव परिवार, ढाणी रामनगर —</div>
+            <div class="contact">
+                📞 9799817324, 9950785111, 8104322542, 6377570877<br>
+                पता: ढाणी रामनगर, चतुर्भुज, जिला कोटपूतली-बहरोड़ (राज.)
+            </div>
+            <div class="glass-signature" onclick="window.open('https://www.instagram.com/sandeep_yadav_._._', '_blank')">
+                Made with <span class="heart-beat">❤️</span> by Sandeep
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Music controls + flower animation
+    const musicToggle = document.getElementById('musicToggle');
+    const bgMusic = document.getElementById('bgMusic');
+    let isPlaying = false;
+    let musicStarted = false;
+
+    function startMusic() {
+        if (!musicStarted) {
+            bgMusic.play().then(() => {
+                musicToggle.style.background = '#c47a5c';
+                isPlaying = true;
+                musicStarted = true;
+            }).catch(e => { musicToggle.style.background = '#b35e3c'; });
+        }
+    }
+
+    musicToggle.addEventListener('click', () => {
+        if (!musicStarted) { startMusic(); return; }
+        if (isPlaying) { bgMusic.pause(); musicToggle.style.background = '#b35e3c'; }
+        else { bgMusic.play(); musicToggle.style.background = '#c47a5c'; }
+        isPlaying = !isPlaying;
+    });
+
+    function addInteractionListener() {
+        const startOnInteraction = () => {
+            startMusic();
+            window.removeEventListener('scroll', startOnInteraction);
+            document.removeEventListener('click', startOnInteraction);
+            window.removeEventListener('touchstart', startOnInteraction);
+        };
+        window.addEventListener('scroll', startOnInteraction, { once: true });
+        document.addEventListener('click', startOnInteraction, { once: true });
+        window.addEventListener('touchstart', startOnInteraction, { once: true });
+    }
+    addInteractionListener();
+
+    // Flower & petal effect
+    const bgFlowers = document.getElementById('backgroundFlowers');
+    const fgFlowers = document.getElementById('foregroundFlowers');
+    const flowerEmojis = ['🌸','🌺','🌼','🌷','💮','🏵️','🌹','🌻','🥀'];
+    
+    function createFloatingElement(container, isForeground = false) {
+        const el = document.createElement('div');
+        el.className = 'flower';
+        const size = isForeground ? 24 + Math.random() * 22 : 18 + Math.random() * 18;
+        const leftPos = Math.random() * 100;
+        const emoji = flowerEmojis[Math.floor(Math.random() * flowerEmojis.length)];
+        el.textContent = emoji;
+        el.style.left = leftPos + '%';
+        el.style.fontSize = size + 'px';
+        el.style.opacity = isForeground ? 0.7 : 0.5;
+        el.style.position = 'absolute';
+        el.style.pointerEvents = 'none';
+        const duration = 5000 + Math.random() * 7000;
+        el.style.animation = `floatFlower ${duration}ms linear forwards`;
+        container.appendChild(el);
+        el.addEventListener('animationend', () => el.remove());
+    }
+
+    setInterval(() => { createFloatingElement(bgFlowers, false); }, 380);
+    setInterval(() => { createFloatingElement(fgFlowers, true); }, 550);
+</script>
+</body>
+</html>
